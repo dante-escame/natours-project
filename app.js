@@ -15,7 +15,6 @@ app.use(express.json());
 app.use(express.static(`${__dirname}/public`)); // Serve arquivos estaticos
 
 app.use((req, res, next) => {
-	console.log('ola');
 	next();
 });
 
