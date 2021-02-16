@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "set NODE_ENV=development && nodemon server.js",
+    "start": "set NODE_ENV=development && nodemon server.js",
     "start:prod": "set NODE_ENV=production && nodemon server.js"
   },
   "author": "Dante Escame",
@@ -13,6 +13,7 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "mongoose": "^5.11.16",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
