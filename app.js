@@ -15,10 +15,6 @@ app.use(express.json());
 app.use(express.static(`${__dirname}/public`)); // Serve arquivos estaticos
 
 app.use((req, res, next) => {
-	next();
-});
-
-app.use((req, res, next) => {
 	req.requestTime = new Date().toISOString();
 	next();
 });
